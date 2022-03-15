@@ -1,0 +1,320 @@
+SELECT
+	get_country ( control_country ) AS country,
+	get_feature_category ( control_country, 'case_cluster', control_cluster ) AS cluster,
+	control_age AS "Age(months)",
+CASE
+		
+		WHEN control_age < 2 THEN
+		SUM(
+		IF
+		( ( control_bcg AND control_opv0 AND control_opv1 AND control_rota1 AND control_penta1 AND control_pcv1 ) = 1, 1, 0 )) 
+		WHEN control_age >= 2 
+		AND control_age <= 4 THEN
+			SUM(
+			IF
+				(
+					(
+						control_bcg 
+						AND control_opv0 
+						AND control_opv1 
+						AND control_opv2 
+						AND control_opv3 
+						AND control_rota1 
+						AND control_rota2 
+						AND control_rota3 
+						AND control_hepb 
+						AND control_penta1 
+						AND control_penta2 
+						AND control_penta3 
+						AND control_pcv1 
+						AND control_pcv2 
+						AND control_pcv3 
+						AND control_ipv 
+					) = 1,
+					1,
+					0 
+				)) 
+			WHEN control_age >= 6 
+			AND control_age < 18 THEN
+				SUM(
+				IF
+					(
+						(
+							control_bcg 
+							AND control_opv0 
+							AND control_opv1 
+							AND control_opv2 
+							AND control_opv3 
+							AND control_rota1 
+							AND control_rota2 
+							AND control_rota3 
+							AND control_hepb
+							AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+							AND control_yfever 
+							AND control_pcv1 
+							AND control_pcv2 
+							AND control_pcv3 
+							AND control_ipv 
+							AND control_meas1 
+						) = 1,
+						1,
+						0 
+					)) 
+				WHEN control_age >= 18 THEN
+				SUM(
+				IF
+					(
+						(
+							control_bcg 
+							AND control_opv0 
+							AND control_opv1 
+							AND control_opv2 
+							AND control_opv3 
+							AND control_rota1 
+							AND control_rota2 
+							AND control_rota3 
+							AND control_hepb 
+							AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+							AND control_yfever 
+							AND control_pcv1 
+							AND control_pcv2 
+							AND control_pcv3 
+							AND control_menga 
+							AND control_meas1 
+							AND control_meas2 
+							AND control_ipv 
+						) = 1,
+						1,
+						0 
+					)) ELSE 0 
+			END AS "complete for age",
+		CASE
+				
+				WHEN control_age <=5 THEN
+					SUM(
+					IF
+						(
+							(
+								NOT ( control_bcg AND control_opv0 AND control_opv1 AND control_opv2 AND control_opv3 AND control_rota1 AND control_rota2 AND control_rota3 AND control_hepb AND control_penta1 
+						AND control_penta2 
+						AND control_penta3 AND control_pcv1 AND control_pcv2 AND control_pcv3 AND control_ipv ) = 1 
+								AND ( control_bcg OR control_opv0 OR control_opv1 OR control_opv2 OR control_opv3 OR control_rota1 OR control_rota2 OR control_rota3 OR control_hepb OR control_penta1 
+						OR control_penta2 
+						OR control_penta3 OR control_pcv1 OR control_pcv2 OR control_pcv3 OR control_ipv ) = 1 
+							),
+							1,
+							0 
+						)) 
+					WHEN control_age >= 6 
+					AND control_age < 18 THEN
+						SUM(
+						IF
+							(
+								(
+									NOT (
+										control_bcg 
+										AND control_opv0 
+										AND control_opv1 
+										AND control_opv2 
+										AND control_opv3 
+										AND control_rota1 
+										AND control_rota2 
+										AND control_rota3 
+										AND control_hepb 
+										AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+										AND control_meas1 
+										AND control_yfever 
+										AND control_pcv1 
+										AND control_pcv2 
+										AND control_pcv3 
+										AND control_ipv 
+									) = 1 
+									AND (
+										control_bcg 
+										OR control_opv0 
+										OR control_opv1 
+										OR control_opv2 
+										OR control_opv3 
+										OR control_rota1 
+										OR control_rota2 
+										OR control_rota3 
+										OR control_hepb 
+										OR control_penta1 
+						OR control_penta2 
+						OR control_penta3
+										OR control_meas1 
+										OR control_yfever 
+										OR control_pcv1 
+										OR control_pcv2 
+										OR control_pcv3 
+										OR control_ipv 
+									) = 1 
+								),
+								1,
+								0 
+							)) 
+						WHEN control_age >= 18 THEN
+						SUM(
+						IF
+							(
+								((
+										control_bcg 
+										OR control_opv0 
+										OR control_opv1 
+										OR control_opv2 
+										OR control_opv3 
+										OR control_rota1 
+										OR control_rota2 
+										OR control_rota3 
+										OR control_hepb 
+										OR control_penta1 
+						OR control_penta2 
+						OR control_penta3
+										OR control_yfever 
+										OR control_pcv1 
+										OR control_pcv2 
+										OR control_pcv3 
+										OR control_menga 
+										OR control_meas1 
+										OR control_meas2 
+										OR control_ipv 
+										) = 1 
+									AND NOT (
+										control_bcg 
+										AND control_opv0 
+										AND control_opv1 
+										AND control_opv2 
+										AND control_opv3 
+										AND control_rota1 
+										AND control_rota2 
+										AND control_rota3 
+										AND control_hepb 
+										AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+										AND control_yfever 
+										AND control_pcv1 
+										AND control_pcv2 
+										AND control_pcv3 
+										AND control_menga 
+										AND control_meas1 
+										AND control_meas2 
+										AND control_ipv 
+									) = 1 
+								),
+								1,
+								0 
+							)) ELSE 0 
+					END AS "partial for age",
+				CASE
+						
+						WHEN control_age < 18 THEN
+						SUM(
+						IF
+						( ( control_meas2 AND control_menga ) = 1 OR ( control_meas2 OR control_menga ) = 1, 1, 0 )) ELSE 0 
+					END AS "inconsistent for age",
+				CASE
+						
+						WHEN control_age < 2 THEN
+						SUM(
+						IF
+						( ( control_bcg AND control_opv0 AND control_opv1 AND control_rota1 AND control_penta1 AND control_pcv1 ) IS NULL OR 0, 1, 0 )) 
+						WHEN control_age >= 2 
+						AND control_age <= 4 THEN
+							SUM(
+							IF
+								(
+									(
+										control_bcg 
+										AND control_opv0 
+										AND control_opv1 
+										AND control_opv2 
+										AND control_opv3 
+										AND control_rota1 
+										AND control_rota2 
+										AND control_rota3 
+										AND control_hepb 
+										AND control_penta1 
+										AND control_penta2 
+										AND control_penta3 
+										AND control_pcv1 
+										AND control_pcv2 
+										AND control_pcv3 
+										AND control_ipv 
+									) IS NULL 
+									OR 0,
+									1,
+									0 
+								)) 
+							WHEN control_age >= 6 
+							AND control_age < 18 THEN
+								SUM(
+								IF
+									(
+										(
+											control_bcg 
+											AND control_opv0 
+											AND control_opv1 
+											AND control_opv2 
+											AND control_opv3 
+											AND control_rota1 
+											AND control_rota2 
+											AND control_rota3 
+											AND control_hepb 
+											AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+											AND control_yfever 
+											AND control_pcv1 
+											AND control_pcv2 
+											AND control_pcv3 
+											AND control_ipv 
+											AND control_meas1 
+										) IS NULL 
+										OR 0,
+										1,
+										0 
+									)) 
+								WHEN control_age >= 18 THEN
+								SUM(
+								IF
+									(
+										(
+											control_bcg 
+											AND control_opv0 
+											AND control_opv1 
+											AND control_opv2 
+											AND control_opv3 
+											AND control_rota1 
+											AND control_rota2 
+											AND control_rota3 
+											AND control_hepb 
+											AND control_penta1 
+						AND control_penta2 
+						AND control_penta3
+											AND control_yfever 
+											AND control_pcv1 
+											AND control_pcv2 
+											AND control_pcv3 
+											AND control_menga 
+											AND control_meas1 
+											AND control_meas2 
+											AND control_ipv 
+										) IS NULL 
+										OR 0,
+										1,
+										0 
+									)) ELSE 0 
+							END AS "None" 
+						FROM
+							safety_controls 
+						GROUP BY
+							country,
+						cluster,
+	control_age 

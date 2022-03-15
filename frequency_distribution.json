@@ -1,0 +1,202 @@
+{
+  "RECORDS": [
+    {
+      "country_name": "Ghana",
+      "Feature": "The gender/sex of the case",
+      "description": "Male",
+      "Total": "191"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The gender/sex of the case",
+      "description": "Female",
+      "Total": "175"
+    },
+    {
+      "country_name": "Kenya",
+      "Feature": "The gender/sex of the case",
+      "description": "Female",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Asunafo North",
+      "Total": "13"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Asutifi North",
+      "Total": "18"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Asutifi South",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Dormaa East",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Dormaa West",
+      "Total": "2"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Sunyani",
+      "Total": "27"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Tain",
+      "Total": "2"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Abura-Asebu-Kwamankese",
+      "Total": "7"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Assin North",
+      "Total": "157"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Cape Coast",
+      "Total": "32"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Gomoa West",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Akatsi South",
+      "Total": "2"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Keta",
+      "Total": "101"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Nkwanta North",
+      "Total": "2"
+    },
+    {
+      "country_name": "Kenya",
+      "Feature": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "description": "Anyoni",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The country where the case was interviewed",
+      "description": "Ghana",
+      "Total": "366"
+    },
+    {
+      "country_name": "Kenya",
+      "Feature": "The country where the case was interviewed",
+      "description": "Kenya",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "Outcome of admission of the case",
+      "description": "Discharged",
+      "Total": "365"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "Outcome of admission of the case",
+      "description": "Absconded",
+      "Total": "1"
+    },
+    {
+      "country_name": "Kenya",
+      "Feature": "Outcome of admission of the case",
+      "description": "Discharged",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "St.Eliabeth hospital",
+      "Total": "31"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Sunyani regional Hospital",
+      "Total": "33"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Cape coast Hospital",
+      "Total": "39"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "St.Francis Xavier Hopsital",
+      "Total": "157"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Winneba Trauma Hopital",
+      "Total": "1"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Nkwanta South Hospital",
+      "Total": "2"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Ho teaching Hospital",
+      "Total": "2"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Keta Government Hospital",
+      "Total": "100"
+    },
+    {
+      "country_name": "Ghana",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "St. Joseph",
+      "Total": "1"
+    },
+    {
+      "country_name": "Kenya",
+      "Feature": "The ID of the sentinel hospital where case was interviewed",
+      "description": "Abobri",
+      "Total": "1"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "RECORDS": [
+    {
+      "sn": "4",
+      "country": "Ghana",
+      "feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "category": "Male",
+      "total": "191",
+      "visits": "3"
+    },
+    {
+      "sn": "4",
+      "country": "Ghana",
+      "feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "category": "Female",
+      "total": "175",
+      "visits": "6"
+    },
+    {
+      "sn": "4",
+      "country": "Kenya",
+      "feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "category": "Female",
+      "total": "1",
+      "visits": "1"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Asunafo North",
+      "total": "13",
+      "visits": "5"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Asutifi North",
+      "total": "18",
+      "visits": "4"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Asutifi South",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Dormaa East",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Dormaa West",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Sunyani",
+      "total": "27",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Tain",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Abura-Asebu-Kwamankese",
+      "total": "7",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Assin North",
+      "total": "157",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Cape Coast",
+      "total": "32",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Gomoa West",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Akatsi South",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Keta",
+      "total": "101",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Ghana",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Nkwanta North",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "2",
+      "country": "Kenya",
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Anyoni",
+      "total": "1",
+      "visits": "1"
+    },
+    {
+      "sn": "1",
+      "country": "Ghana",
+      "feature": "case_country",
+      "description": "The country where the case was interviewed",
+      "category": "Ghana",
+      "total": "366",
+      "visits": "9"
+    },
+    {
+      "sn": "1",
+      "country": "Kenya",
+      "feature": "case_country",
+      "description": "The country where the case was interviewed",
+      "category": "Kenya",
+      "total": "1",
+      "visits": "1"
+    },
+    {
+      "sn": "5",
+      "country": "Ghana",
+      "feature": "case_outcome",
+      "description": "Outcome of admission of the case",
+      "category": "Discharged",
+      "total": "365",
+      "visits": "9"
+    },
+    {
+      "sn": "5",
+      "country": "Ghana",
+      "feature": "case_outcome",
+      "description": "Outcome of admission of the case",
+      "category": "Absconded",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "5",
+      "country": "Kenya",
+      "feature": "case_outcome",
+      "description": "Outcome of admission of the case",
+      "category": "Discharged",
+      "total": "1",
+      "visits": "1"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "St.Eliabeth hospital",
+      "total": "31",
+      "visits": "9"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Sunyani regional Hospital",
+      "total": "33",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Cape coast Hospital",
+      "total": "39",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "St.Francis Xavier Hopsital",
+      "total": "157",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Winneba Trauma Hopital",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Nkwanta South Hospital",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Ho teaching Hospital",
+      "total": "2",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Keta Government Hospital",
+      "total": "100",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Ghana",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "St. Joseph",
+      "total": "1",
+      "visits": "0"
+    },
+    {
+      "sn": "3",
+      "country": "Kenya",
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Abobri",
+      "total": "1",
+      "visits": "1"
+    }
+  ]
+}

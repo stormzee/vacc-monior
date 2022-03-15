@@ -1,0 +1,275 @@
+#SELECT id, name, interprete_age(age) as age, admission_outcome(outcome) as outcome,  show_country(country) as country, interprete_sex(sex) as sex, dob, doa FROM profile;
+
+
+#INSERT INTO profile (ID, name, sex,age, country, dob, doa, outcome) VALUES (29,"kofi dickson", 4, 2, 3, "2004-04-05","2021-10-10", 3);
+
+
+
+USE data
+DELIMITER //
+CREATE OR REPLACE FUNCTION gender_output(sex int)
+RETURNS varchar(20)
+BEGIN
+DECLARE gender varchar(20);
+SELECT gender_label INTO gender FROM gender WHERE gender_code= sex;
+IF gender IS null THEN SET gender="Unknown";
+END IF;
+RETURN gender;
+END;
+//
+DELIMITER ;
+
+USE data
+DELIMITER //
+CREATE OR REPLACE FUNCTION country_output(country int)
+RETURNS varchar(20)
+BEGIN
+DECLARE rep_country varchar(20);
+SELECT country_name INTO rep_country FROM country_list WHERE country_code = country;
+IF rep_country IS null THEN SET rep_country="Unknown";
+END IF;
+RETURN rep_country;
+END;
+//
+DELIMITER ;
+
+USE data
+DELIMITER //
+CREATE OR REPLACE FUNCTION admissions(outcome int)
+RETURNS varchar(20)
+BEGIN
+DECLARE admission_output varchar(20);
+SELECT rep_outcome_code INTO admission_output FROM admission_outcome WHERE outcome_code = outcome;
+IF admission_output IS null THEN SET admission_output="Unknown";
+END IF;
+RETURN admission_output;
+END;
+//
+DELIMITER ;
+
+
+
+USE data
+DELIMITER //
+CREATE or REPLACE FUNCTION get_age(age int)
+RETURNS varchar(20)
+BEGIN
+DECLARE patient_age varchar(20);
+SELECT age_interpretation INTO patient_age FROM age_category WHERE age_category_code = age;
+IF patient_age IS NULL THEN SET patient_age = "Unknown";
+END IF;
+RETURN patient_age;
+END;
+//
+DELIMITER ;
+
+
+SELECT ID, name, sex, gender_output(sex) as gender, country, country_output(country) as country_name, outcome, admissions(outcome) as actual_outcome, age, get_age(age) as age_category, dob, doa	FROM profile as final;
+
+
+
+
+
+
+
+
+
+
+
+SELECT gender AS features, COUNT(*) AS total FROM profileview GROUP BY gender
+UNION
+SELECT country_name, COUNT(*) FROM profileview GROUP BY country_name
+UNION
+SELECT age_category, COUNT(*) FROM profileview GROUP BY age_category
+UNION
+SELECT actual_outcome, COUNT(*) FROM profileview GROUP BY actual_outcome;
+
+#USE data
+#DELIMITER //
+#CREATE OR REPLACE FUNCTION get_totals(gender varchar, country_name varchar, actual_outcome varchar, age_category varchar)
+#RETURNS INT
+#BEGIN 
+#DECLARE i 
+
+
+
+
+#CREATE TABLE datapoints (ID int AUTO_INCREMENT, country_code int(1), feature varchar(20) , code int(1), label varchar(20), PRIMARY KEY (ID));
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (28, 4,"age",1,"0-5");
+
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (29, 4,"age",2,"6-18");
+
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (30, 4,"age",3,"19-30");
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (31, 4,"age",1,"31+");
+
+
+
+###outcome
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (32, 4,"outcome",1,"Decharge");
+
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (33, 4,"outcome",2,"Decedes");
+
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (34, 4,"outcome",3,"S'est enfui");
+
+###sex
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (35, 4,"sex",1,"Homme");
+
+
+INSERT INTO `datapoints`(`ID`,`country_code`, `feature`, `code`, `label`) VALUES (36, 4,"sex",2,"Femme");
+
+
+USE data
+DELIMITER //
+CREATE OR REPLACE FUNCTION get_label(ctry_code int, feature_name varchar(20), variable_code int)
+RETURNS varchar(20)
+BEGIN
+DECLARE patient_label varchar(20);
+SELECT label INTO patient_label FROM datapoints WHERE datapoints.country_code=ctry_code AND datapoints.feature=feature_name AND datapoints.var_code=variable_code;
+RETURN patient_label;
+END;
+//
+DELIMITER ; 
+
+
+SELECT get_label(country_code, feature, var_code) FROM datapoints;
+
+#SELECT * FROM datapoints WHERE var_code=2 AND feature="outcome" AND country_code=4;
+
+
+USE data
+DELIMITER //
+CREATE OR REPLACE FUNCTION get_label(ctry_code int, feature_name varchar(20), variable_code int)
+RETURNS varchar(20)
+BEGIN
+DECLARE patient_label varchar(20);
+SELECT label INTO patient_label FROM datapoints WHERE datapoints.country_code=ctry_code AND datapoints.feature=feature_name AND datapoints.var_code=variable_code;
+IF patient_label IS NULL THEN SET patient_label = "Unknown";
+END IF;
+RETURN patient_label;
+END;
+//
+DELIMITER ; 
+
+DELIMITER //
+CREATE OR REPLACE PROCEDURE get_patient_label(IN ctry_code int, IN feature_name varchar(20), IN variable_code int)
+BEGIN
+SELECT * FROM datapoints WHERE datapoints.country_code = ctry_code AND datapoints.feature = feature_name AND datapoints.var_code = variable_code;
+END //
+DELIMITER ;
+
+
+CALL get_patient_label(4, "outcome", 2);
+
+#SELECT * FROM datapoints WHERE var_code=2 AND feature="outcome" AND country_code=4;
+
+select `final`.`ID` AS `ID`,`final`.`name` AS `name`,`final`.`sex` AS `sex`,`get_label`(0,'sex',`final`.`sex`) AS `gender`,
+`final`.`country` AS `country`,`country_output`(`final`.`country`) AS `country name`,
+`final`.`outcome` AS `outcome`,`get_label`(0,'outcome',`final`.`outcome`) AS `actual outcome`,`final`.`age` AS `age`,
+`get_label`(0,'age',`final`.`age`) AS `age category`,`get_label`(0,'type of house',`final`.`type_of_house`) AS `type of house` 
+from `data`.`profile` `final`
+
+
+
+
+
+
+
+
+USE work
+DELIMITER //
+CREATE OR REPLACE FUNCTION get_frequency(feature_name varchar(20), var_code int)
+RETURNS varchar(20)
+BEGIN
+DECLARE patient_label varchar(20);
+SELECT label INTO patient_label FROM datapoints WHERE datapoints.var_code = var_code AND datapoints.feature = feature_name;
+IF patient_label IS NULL THEN SET patient_label = "Unknown";
+END IF;
+RETURN patient_label;
+END;
+//
+DELIMITER ;
+
+SELECT get_frequency('outcome', 3) FROM safety_listing
+
+
+
+SELECT DISTINCT(COUNT(case_country)), get_frequency(0,'country', case_country) AS Feature FROM `safety_listing`
+UNION
+SELECT DISTINCT(COUNT(case_cluster)), get_frequency(case_country,'cluster', case_cluster) FROM `safety_listing`
+UNION
+SELECT DISTINCT(COUNT(case_gender)), get_frequency(0,'gender', case_gender) FROM `safety_listing`;
+
+
+
+USE work
+DELIMITER //
+CREATE OR REPLACE FUNCTION get_frequency(ctry int, feature_name varchar(20), variable_code int)
+RETURNS varchar(20)
+BEGIN
+DECLARE final_label varchar(20);
+SELECT label INTO final_label FROM datapoints WHERE datapoints.var_code = variable_code AND datapoints.feature = feature_name AND datapoints.country = ctry;
+IF final_label IS NULL THEN SET final_label = "Unknown";
+END IF;
+RETURN final_label;
+END;
+//
+DELIMITER ;
+
+SELECT DISTINCT(get_frequency(0, 'country', 2)) AS country, COUNT(*) AS total FROM safety_listing
+UNION
+SELECT get_frequency(0, 'gender', 1), COUNT(*) FROM safety_listing;
+
+
+SELECT DISTINCT(get_feature_description(case_country,'cluster', case_cluster)) AS Description, case_cluster AS Feature FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'gender', case_gender)), case_gender FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'country', case_country)), case_country FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'outcome', case_outcome)), case_outcome FROM `safety_listing`
+
+
+SELECT DISTINCT(get_feature_description(case_country,'cluster', case_cluster)) AS Description, get_feature_name(case_country, case_cluster,  get_feature_description(case_country,'cluster', case_cluster)) AS Feature FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'gender', case_gender)), get_feature_name(0, case_gender, get_feature_description(0,'gender', case_gender)) AS Feature FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'country', case_country)), get_feature_name(0, case_country, get_feature_description(0,'country', case_country)) AS Feature FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(0,'outcome', case_outcome)), get_feature_name(0, case_outcome, get_feature_description(0,'outcome', case_outcome)) AS Feature FROM `safety_listing`
+UNION ALL
+SELECT DISTINCT(get_feature_description(case_country, 'sentinel', case_hosp)), get_feature_name(case_country, case_hosp, get_feature_description(case_country,'sentinel', case_hosp)) AS Feature FROM `safety_listing`;
+
+
+#Always keep datatypes having a large memory..e.g varchar(255), int(50 or a high range depending on the number of records)
+
+
+SELECT get_country(0, case_country) AS country_name, get_feature_name(case_country, case_cluster,  get_feature_description(case_country,'cluster', case_cluster)) AS Feature, get_feature_description(case_country,'cluster', case_cluster) AS Description, COUNT(*) AS Total  FROM `safety_listing` GROUP BY Description
+UNION ALL
+SELECT get_country(0, case_country) AS country_name,  get_feature_name(0, case_gender, get_feature_description(0,'gender', case_gender)) AS Feature,  get_feature_description(0,'gender', case_gender) AS description, COUNT(*) FROM `safety_listing` GROUP BY Description
+UNION ALL
+SELECT get_country(0, case_country) AS country_name, get_feature_name(0, case_country, get_feature_description(0,'country', case_country)) AS Feature, get_feature_description(0,'country', case_country) AS description, COUNT(*)  FROM `safety_listing` GROUP BY Description
+UNION ALL
+SELECT get_country(0, case_country) AS country_name,  get_feature_name(0, case_outcome, get_feature_description(0,'outcome', case_outcome)) AS Feature, get_feature_description(0,'outcome', case_outcome)  AS description, COUNT(*) FROM `safety_listing` GROUP BY Description
+UNION ALL
+SELECT get_country(0, case_country) AS country_name, get_feature_name(case_country, case_hosp, get_feature_description(case_country,'sentinel', case_hosp)) AS Feature, get_feature_description(case_country, 'sentinel', case_hosp)  AS description, COUNT(*) FROM `safety_listing` GROUP BY Description
+
+
+select `get_feature_name`(`work`.`safety_listing`.`case_country`,`work`.`safety_listing`.`case_cluster`,`get_feature_description`(`work`.`safety_listing`.`case_country`,'cluster',`work`.`safety_listing`.`case_cluster`)) AS `Feature`,`get_feature_description`(`work`.`safety_listing`.`case_country`,'cluster',`work`.`safety_listing`.`case_cluster`) AS `Description`,count(0) AS `Total` from `work`.`safety_listing` group by `get_feature_description`(`work`.`safety_listing`.`case_country`,'cluster',`work`.`safety_listing`.`case_cluster`) union all select `get_feature_name`(0,`work`.`safety_listing`.`case_gender`,`get_feature_description`(0,'gender',`work`.`safety_listing`.`case_gender`)) AS `Feature`,`get_feature_description`(0,'gender',`work`.`safety_listing`.`case_gender`) AS `description`,count(0) AS `COUNT(*)` from `work`.`safety_listing` group by `get_feature_description`(0,'gender',`work`.`safety_listing`.`case_gender`) union all select `get_feature_name`(0,`work`.`safety_listing`.`case_country`,`get_feature_description`(0,'country',`work`.`safety_listing`.`case_country`)) AS `Feature`,`get_feature_description`(0,'country',`work`.`safety_listing`.`case_country`) AS `description`,count(0) AS `COUNT(*)` from `work`.`safety_listing` group by `get_feature_description`(0,'country',`work`.`safety_listing`.`case_country`) union all select `get_feature_name`(0,`work`.`safety_listing`.`case_outcome`,`get_feature_description`(0,'outcome',`work`.`safety_listing`.`case_outcome`)) AS `Feature`,`get_feature_description`(0,'outcome',`work`.`safety_listing`.`case_outcome`) AS `description`,count(0) AS `COUNT(*)` from `work`.`safety_listing` group by `get_feature_description`(0,'outcome',`work`.`safety_listing`.`case_outcome`) union all select `get_feature_name`(`work`.`safety_listing`.`case_country`,`work`.`safety_listing`.`case_hosp`,`get_feature_description`(`work`.`safety_listing`.`case_country`,'sentinel',`work`.`safety_listing`.`case_hosp`)) AS `Feature`,`get_feature_description`(`work`.`safety_listing`.`case_country`,'sentinel',`work`.`safety_listing`.`case_hosp`) AS `description`,count(0) AS `COUNT(*)` from `work`.`safety_listing` group by `get_feature_description`(`work`.`safety_listing`.`case_country`,'sentinel',`work`.`safety_listing`.`case_hosp`)
+
+SELECT get_country(0, case_country) AS country_name,  get_feature_name(0, case_gender, get_feature_description(0,'gender', case_gender)) AS Feature,  get_feature_description(0,'gender', case_gender) AS description, COUNT(*) AS Frequency FROM `safety_listing` GROUP BY case_country, case_gender
+UNION ALL
+SELECT get_country(0, case_country) AS country_name, get_feature_name(case_country, case_cluster,  get_feature_description(case_country,'cluster', case_cluster)) AS Feature, get_feature_description(case_country,'cluster', case_cluster) AS Description, COUNT(*) AS Total  FROM `safety_listing` GROUP BY case_country, case_cluster
+UNION ALL
+SELECT get_country(0, case_country) AS country_name, get_feature_name(0, case_country, get_feature_description(0,'country', case_country)) AS Feature, get_feature_description(0,'country', case_country) AS description, COUNT(*)  FROM `safety_listing` GROUP BY case_country, case_country
+UNION ALL
+SELECT get_country(0, case_country) AS country_name,  get_feature_name(0, case_outcome, get_feature_description(0,'outcome', case_outcome)) AS Feature, get_feature_description(0,'outcome', case_outcome)  AS description, COUNT(*) FROM `safety_listing` GROUP BY case_country, case_outcome
+UNION ALL
+SELECT get_country(0, case_country) AS country_name, get_feature_name(case_country, case_hosp, get_feature_description(case_country,'sentinel', case_hosp)) AS Feature, get_feature_description(case_country, 'sentinel', case_hosp)  AS description, COUNT(*)  FROM `safety_listing` GROUP BY case_country, case_hosp
+

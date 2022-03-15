@@ -1,0 +1,1355 @@
+{
+  "RECORDS": [
+    {
+      "country": "Ghana",
+      "Feature": "case_bcg",
+      "description": "Whether card has information about BCG vaccine",
+      "category": "Yes with date",
+      "Total": "10"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hepb",
+      "description": "Whether card has information about HEPATITIS vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hepb",
+      "description": "Whether card has information about HEPATITIS vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hepb",
+      "description": "Whether card has information about HEPATITIS vaccine",
+      "category": "Yes with date",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_edu",
+      "description": "The highest level of education of the care giver",
+      "category": "None",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_edu",
+      "description": "The highest level of education of the care giver",
+      "category": "Primary",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_edu",
+      "description": "The highest level of education of the care giver",
+      "category": "Secondary",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_edu",
+      "description": "The highest level of education of the care giver",
+      "category": "College",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "January",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "October",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "December",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "February",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "March",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "April",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "May",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "category": "June",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rel",
+      "description": "The relationship of the care giver to child of interest",
+      "category": "Mother  ",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rel",
+      "description": "The relationship of the care giver to child of interest",
+      "category": "Father",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rlgn",
+      "description": "The religion of the care giver",
+      "category": "Christain",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rlgn",
+      "description": "The religion of the care giver",
+      "category": "Muslim",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rsp",
+      "description": "Whether the care giver is the respondent to this interview",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_rsp",
+      "description": "Whether the care giver is the respondent to this interview",
+      "category": "Yes",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "Farmer ",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "No Occupation",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "Self employed",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "Nurse/Health worker",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "Student",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "category": "Other (specify)",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cdist",
+      "description": "Distance to the nearest health center in kilometers",
+      "category": "less than 1km",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cdist",
+      "description": "Distance to the nearest health center in kilometers",
+      "category": "1-4kms.",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cdist",
+      "description": "Distance to the nearest health center in kilometers",
+      "category": "5-10kms",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cdist",
+      "description": "Distance to the nearest health center in kilometers",
+      "category": "10km or more",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Sunyani",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Assin North",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Asutifi North",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Cape Coast",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "category": "Akatsi South",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_country",
+      "description": "The country where the case was interviewed",
+      "category": "Ghana",
+      "Total": "10"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "category": "Male",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "category": "Female",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "St.Eliabeth hospital",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Sunyani regional Hospital",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Cape coast Hospital",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "St.Francis Xavier Hopsital",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "category": "Ho teaching Hospital",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_ipv",
+      "description": "Whether card has information about IPV DOSE vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_ipv",
+      "description": "Whether card has information about IPV DOSE vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas1",
+      "description": "Whether card has information about MEASLES DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas1",
+      "description": "Whether card has information about MEASLES DOSE 1 vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas1",
+      "description": "Whether card has information about MEASLES DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas2",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas2",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_meas2",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_menga",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_menga",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_menga",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "7"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_net_bsick",
+      "description": "Whether the child of interest regularly slept under a bed net before getting ill.",
+      "category": "No",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_net_bsick",
+      "description": "Whether the child of interest regularly slept under a bed net before getting ill.",
+      "category": "Yes",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_net_night",
+      "description": "Whether the child of interest slept under a bed net last night",
+      "category": "No",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_net_night",
+      "description": "Whether the child of interest slept under a bed net last night",
+      "category": "Yes",
+      "Total": "7"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv0",
+      "description": "Whether card has information about OPV  DOSE 0 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv0",
+      "description": "Whether card has information about OPV  DOSE 0 vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv0",
+      "description": "Whether card has information about OPV  DOSE 0 vaccine",
+      "category": "Yes with date",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv1",
+      "description": "Whether card has information about OPV DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv1",
+      "description": "Whether card has information about OPV DOSE 1 vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv1",
+      "description": "Whether card has information about OPV DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv2",
+      "description": "Whether card has information about OPV DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv2",
+      "description": "Whether card has information about OPV DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv3",
+      "description": "Whether card has information about OPV DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_opv3",
+      "description": "Whether card has information about OPV DOSE 3 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_outcome",
+      "description": "Outcome of admission of the case",
+      "category": "Discharged",
+      "Total": "10"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv1",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv1",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv2",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv2",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv3",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_pcv3",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 3 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta1",
+      "description": "Whether card has information about PENTAVALENT DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta1",
+      "description": "Whether card has information about PENTAVALENT DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta2",
+      "description": "Whether card has information about PENTAVALENT DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta2",
+      "description": "Whether card has information about PENTAVALENT DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta3",
+      "description": "Whether card has information about PENTAVALENT DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_penta3",
+      "description": "Whether card has information about PENTAVALENT DOSE 3 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_bcg",
+      "description": "Response to recall on BCG vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_bcg",
+      "description": "Response to recall on BCG vaccine",
+      "category": "Yes",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_bcg",
+      "description": "Response to recall on BCG vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_hepb",
+      "description": "Response to recall on HEPATITIS vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_hepb",
+      "description": "Response to recall on HEPATITIS vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_hepb",
+      "description": "Response to recall on HEPATITIS vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_ipv",
+      "description": "Response to recall on IPV DOSE vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_ipv",
+      "description": "Response to recall on IPV DOSE vaccine",
+      "category": "Yes",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_ipv",
+      "description": "Response to recall on IPV DOSE vaccine",
+      "category": "Missing",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_meas1",
+      "description": "Response to recall on MEASLES DOSE 1 vaccine",
+      "category": "No",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_meas1",
+      "description": "Response to recall on MEASLES DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "7"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_meas2",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "No",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_meas2",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Yes",
+      "Total": "7"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_menga",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_menga",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_menga",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv0",
+      "description": "Response to recall on OPV  DOSE 0 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv0",
+      "description": "Response to recall on OPV  DOSE 0 vaccine",
+      "category": "Yes",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv0",
+      "description": "Response to recall on OPV  DOSE 0 vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv1",
+      "description": "Response to recall on OPV DOSE 1 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv1",
+      "description": "Response to recall on OPV DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "7"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv1",
+      "description": "Response to recall on OPV DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv2",
+      "description": "Response to recall on OPV DOSE 2 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv2",
+      "description": "Response to recall on OPV DOSE 2 vaccine",
+      "category": "Yes",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv2",
+      "description": "Response to recall on OPV DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv3",
+      "description": "Response to recall on OPV DOSE 3 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_opv3",
+      "description": "Response to recall on OPV DOSE 3 vaccine",
+      "category": "Yes",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv1",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 1 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv1",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv1",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv2",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 2 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv2",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 2 vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv2",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv3",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 3 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv3",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 3 vaccine",
+      "category": "Yes",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_pcv3",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta1",
+      "description": "Response to recall on PENTAVALENT DOSE 1 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta1",
+      "description": "Response to recall on PENTAVALENT DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta1",
+      "description": "Response to recall on PENTAVALENT DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta2",
+      "description": "Response to recall on PENTAVALENT DOSE 2 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta2",
+      "description": "Response to recall on PENTAVALENT DOSE 2 vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta2",
+      "description": "Response to recall on PENTAVALENT DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta3",
+      "description": "Response to recall on PENTAVALENT DOSE 3 vaccine",
+      "category": "No",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta3",
+      "description": "Response to recall on PENTAVALENT DOSE 3 vaccine",
+      "category": "Yes",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_penta3",
+      "description": "Response to recall on PENTAVALENT DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota1",
+      "description": "Response to recall on ROTAVIRUS DOSE 1 vaccine",
+      "category": "No",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota1",
+      "description": "Response to recall on ROTAVIRUS DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "6"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota1",
+      "description": "Response to recall on ROTAVIRUS DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota2",
+      "description": "Response to recall on ROTAVIRUS DOSE 2 vaccine",
+      "category": "No",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota2",
+      "description": "Response to recall on ROTAVIRUS DOSE 2 vaccine",
+      "category": "Yes",
+      "Total": "8"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota3",
+      "description": "Response to recall on ROTAVIRUS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rota3",
+      "description": "Response to recall on ROTAVIRUS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss1",
+      "description": "Response to recall on RTSS DOSE 1 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss1",
+      "description": "Response to recall on RTSS DOSE 1 vaccine",
+      "category": "Yes",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss1",
+      "description": "Response to recall on RTSS DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss1",
+      "description": "Response to recall on RTSS DOSE 1 vaccine",
+      "category": "Dont know",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss2",
+      "description": "Response to recall on RTSS DOSE 2 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss2",
+      "description": "Response to recall on RTSS DOSE 2 vaccine",
+      "category": "Yes",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss2",
+      "description": "Response to recall on RTSS DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss2",
+      "description": "Response to recall on RTSS DOSE 2 vaccine",
+      "category": "Dont know",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss3",
+      "description": "Response to recall on RTSS DOSE 3 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss3",
+      "description": "Response to recall on RTSS DOSE 3 vaccine",
+      "category": "Yes",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss3",
+      "description": "Response to recall on RTSS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss3",
+      "description": "Response to recall on RTSS DOSE 3 vaccine",
+      "category": "Dont know",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss4",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "No",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss4",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Yes",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss4",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_rtss4",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "category": "Dont know",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_yfever",
+      "description": "Response to recall on YELLOW FEVER vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_yfever",
+      "description": "Response to recall on YELLOW FEVER vaccine",
+      "category": "Yes",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rec_yfever",
+      "description": "Response to recall on YELLOW FEVER vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota1",
+      "description": "Whether card has information about ROTAVIRUS DOSE 1 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota1",
+      "description": "Whether card has information about ROTAVIRUS DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota2",
+      "description": "Whether card has information about ROTAVIRUS DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota2",
+      "description": "Whether card has information about ROTAVIRUS DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota3",
+      "description": "Whether card has information about ROTAVIRUS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rota3",
+      "description": "Whether card has information about ROTAVIRUS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss1",
+      "description": "Whether card has information about RTSS DOSE 1 vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss1",
+      "description": "Whether card has information about RTSS DOSE 1 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss1",
+      "description": "Whether card has information about RTSS DOSE 1 vaccine",
+      "category": "Yes with date",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss1",
+      "description": "Whether card has information about RTSS DOSE 1 vaccine",
+      "category": "NA",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss2",
+      "description": "Whether card has information about RTSS DOSE 2 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss2",
+      "description": "Whether card has information about RTSS DOSE 2 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss2",
+      "description": "Whether card has information about RTSS DOSE 2 vaccine",
+      "category": "Yes with date",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss2",
+      "description": "Whether card has information about RTSS DOSE 2 vaccine",
+      "category": "NA",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss3",
+      "description": "Whether card has information about RTSS DOSE 3 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss3",
+      "description": "Whether card has information about RTSS DOSE 3 vaccine",
+      "category": "No",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss3",
+      "description": "Whether card has information about RTSS DOSE 3 vaccine",
+      "category": "Yes with date",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss3",
+      "description": "Whether card has information about RTSS DOSE 3 vaccine",
+      "category": "NA",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss4",
+      "description": "Whether card has information about RTSS DOSE 4 vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss4",
+      "description": "Whether card has information about RTSS DOSE 4 vaccine",
+      "category": "No",
+      "Total": "5"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss4",
+      "description": "Whether card has information about RTSS DOSE 4 vaccine",
+      "category": "Yes with date",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_rtss4",
+      "description": "Whether card has information about RTSS DOSE 4 vaccine",
+      "category": "NA",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_sdist",
+      "description": "Distance from the household to the hospital kilometers",
+      "category": "less than 1km",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_sdist",
+      "description": "Distance from the household to the hospital kilometers",
+      "category": "1-4kms.",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_sdist",
+      "description": "Distance from the household to the hospital kilometers",
+      "category": "5-10kms",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_sdist",
+      "description": "Distance from the household to the hospital kilometers",
+      "category": "10km or more",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_lpoint",
+      "description": "The place where child of interest most recently received vaccine",
+      "category": "local health centre(Government)",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_lpoint",
+      "description": "The place where child of interest most recently received vaccine",
+      "category": "local health centre(Private)",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_lpoint",
+      "description": "The place where child of interest most recently received vaccine",
+      "category": "Mobile clinic",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_lpoint",
+      "description": "The place where child of interest most recently received vaccine",
+      "category": "Missing",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_photo",
+      "description": "Whether a snapshot/photo of the DOCUMENTED VACCINE has been taken",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_photo",
+      "description": "Whether a snapshot/photo of the DOCUMENTED VACCINE has been taken",
+      "category": "Yes",
+      "Total": "9"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_rpoint",
+      "description": "The place where child of interest routinely receives vaccines",
+      "category": "local health centre(Government)",
+      "Total": "4"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_rpoint",
+      "description": "The place where child of interest routinely receives vaccines",
+      "category": "local health centre(Private)",
+      "Total": "2"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_rpoint",
+      "description": "The place where child of interest routinely receives vaccines",
+      "category": "Mobile clinic",
+      "Total": "3"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_vacc_rpoint",
+      "description": "The place where child of interest routinely receives vaccines",
+      "category": "Other",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_yfever",
+      "description": "Whether card has information about YELLOW FEVER vaccine",
+      "category": "Missing",
+      "Total": "0"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_yfever",
+      "description": "Whether card has information about YELLOW FEVER vaccine",
+      "category": "No",
+      "Total": "1"
+    },
+    {
+      "country": "Ghana",
+      "Feature": "case_yfever",
+      "description": "Whether card has information about YELLOW FEVER vaccine",
+      "category": "Yes with date",
+      "Total": "8"
+    }
+  ]
+}

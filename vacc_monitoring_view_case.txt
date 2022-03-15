@@ -1,0 +1,342 @@
+SELECT
+	get_country ( case_country ) AS country,
+	get_feature_category ( case_country, 'case_cluster', case_cluster ) AS cluster,
+	case_age AS "Age(months)",
+CASE
+		
+		WHEN case_age < 2 THEN
+			SUM(
+			IF
+				(
+					( case_bcg 
+					AND case_opv0 
+					AND case_opv1 
+					AND case_rota1 
+					AND case_penta1 
+					AND case_pcv1
+					) = 1,
+					1, 
+					0 
+				)) 
+		WHEN case_age >= 2 
+		AND case_age <= 4 THEN
+			SUM(
+			IF
+				(
+					(
+						case_bcg 
+						AND case_opv0 
+						AND case_opv1 
+						AND case_opv2 
+						AND case_opv3 
+						AND case_rota1 
+						AND case_rota2 
+						AND case_rota3 
+						AND case_hepb 
+						AND case_penta1 
+						AND case_penta2 
+						AND case_penta3 
+						AND case_pcv1 
+						AND case_pcv2 
+						AND case_pcv3 
+						AND case_ipv 
+					) = 1,
+					1,
+					0 
+				)) 
+			WHEN case_age >= 6 
+			AND case_age < 18 THEN
+				SUM(
+				IF
+					(
+						(
+							case_bcg 
+							AND case_opv0 
+							AND case_opv1 
+							AND case_opv2 
+							AND case_opv3 
+							AND case_rota1 
+							AND case_rota2 
+							AND case_rota3 
+							AND case_hepb 
+							AND case_penta1 
+							AND case_penta2 
+							AND case_penta3
+							AND case_yfever 
+							AND case_pcv1 
+							AND case_pcv2 
+							AND case_pcv3 
+							AND case_ipv 
+							AND case_meas1 
+						) = 1,
+						1,
+						0 
+					)) 
+				WHEN case_age >= 18 THEN
+				SUM(
+				IF
+					(
+						(
+							case_bcg 
+							AND case_opv0 
+							AND case_opv1 
+							AND case_opv2 
+							AND case_opv3 
+							AND case_rota1 
+							AND case_rota2 
+							AND case_rota3 
+							AND case_hepb 
+							AND case_penta1 
+							AND case_penta2 
+							AND case_penta3
+							AND case_yfever 
+							AND case_pcv1 
+							AND case_pcv2 
+							AND case_pcv3 
+							AND case_menga 
+							AND case_meas1 
+							AND case_meas2 
+							AND case_ipv 
+						) = 1,
+						1,
+						0 
+					)) ELSE 0 
+			END AS "complete for age",
+		CASE
+				
+				WHEN case_age <= 5 THEN
+					SUM(
+					IF
+						(
+							(
+								NOT ( case_bcg AND case_opv0 AND case_opv1 AND case_opv2 AND case_opv3 AND case_rota1 AND case_rota2 AND case_rota3 AND case_hepb AND case_penta1 AND case_penta2 AND case_penta3 AND case_pcv1 AND case_pcv2 AND case_pcv3 AND case_ipv ) = 1 
+								AND ( case_bcg OR case_opv0 OR case_opv1 OR case_opv2 OR case_opv3 OR case_rota1 OR case_rota2 OR case_rota3 OR case_hepb OR case_penta1 OR case_penta2 OR case_penta3 OR case_pcv1 OR case_pcv2 OR case_pcv3 OR case_ipv ) = 1 
+							),
+							1,
+							0 
+						)) 
+					WHEN case_age >= 6 
+					AND case_age < 18 THEN
+						SUM(
+						IF
+							(
+								(
+									NOT (
+										case_bcg 
+										AND case_opv0 
+										AND case_opv1 
+										AND case_opv2 
+										AND case_opv3 
+										AND case_rota1 
+										AND case_rota2 
+										AND case_rota3 
+										AND case_hepb 
+										AND case_penta1 
+										AND case_penta2 
+										AND case_penta3
+										AND case_meas1 
+										AND case_yfever 
+										AND case_pcv1 
+										AND case_pcv2 
+										AND case_pcv3 
+										AND case_ipv 
+									) = 1 
+									AND (
+										case_bcg 
+										OR case_opv0 
+										OR case_opv1 
+										OR case_opv2 
+										OR case_opv3 
+										OR case_rota1 
+										OR case_rota2 
+										OR case_rota3 
+										OR case_hepb 
+										OR case_penta1 
+										OR case_penta2
+										OR case_penta3
+										OR case_meas1 
+										OR case_yfever 
+										OR case_pcv1 
+										OR case_pcv2 
+										OR case_pcv3 
+										OR case_ipv 
+									) = 1 
+								),
+								1,
+								0 
+							)) 
+						WHEN case_age >= 18 THEN
+						SUM(
+						IF
+							(
+								((
+										case_bcg 
+										OR case_opv0 
+										OR case_opv1 
+										OR case_opv2 
+										OR case_opv3 
+										OR case_rota1 
+										OR case_rota2 
+										OR case_rota3 
+										OR case_hepb 
+										OR case_penta1 
+										OR case_penta2 
+										OR case_penta3
+										OR case_yfever 
+										OR case_pcv1 
+										OR case_pcv2 
+										OR case_pcv3 
+										OR case_menga 
+										OR case_meas1 
+										OR case_meas2 
+										OR case_ipv 
+										) = 1 
+									AND NOT (
+										case_bcg 
+										AND case_opv0 
+										AND case_opv1 
+										AND case_opv2 
+										AND case_opv3 
+										AND case_rota1 
+										AND case_rota2 
+										AND case_rota3 
+										AND case_hepb 
+										AND case_penta1 
+										AND case_penta2
+										AND case_penta3
+										AND case_yfever 
+										AND case_pcv1 
+										AND case_pcv2 
+										AND case_pcv3 
+										AND case_menga 
+										AND case_meas1 
+										AND case_meas2 
+										AND case_ipv 
+									) = 1 
+								),
+								1,
+								0 
+							)) ELSE 0 
+					END AS "incomplete for age",
+				CASE
+						
+						WHEN case_age < 18 THEN
+						SUM(
+						IF
+						( 
+							( case_meas2 AND case_menga ) = 1 OR 
+							( case_meas2 OR case_menga ) = 1,
+							1, 
+							0 
+						)) 
+							ELSE 0 
+					END AS "inconsistent for age",
+				CASE
+						
+						WHEN case_age < 2 THEN
+						SUM(
+						IF
+							(
+								(case_bcg 
+								AND case_opv0 
+								AND case_opv1 
+								AND case_rota1 
+								AND case_penta1 
+								AND case_pcv1 
+								) IS NULL OR 0,
+								1,
+								0 
+							)) 
+						WHEN case_age >= 2 
+						AND case_age <= 4 THEN
+							SUM(
+							IF
+								(
+									(
+										case_bcg 
+										AND case_opv0 
+										AND case_opv1 
+										AND case_opv2 
+										AND case_opv3 
+										AND case_rota1 
+										AND case_rota2 
+										AND case_rota3 
+										AND case_hepb 
+										AND case_penta1 
+										AND case_penta2 
+										AND case_penta3 
+										AND case_pcv1 
+										AND case_pcv2 
+										AND case_pcv3 
+										AND case_ipv 
+									) IS NULL 
+									OR 0,
+									1,
+									0 
+								)) 
+							WHEN case_age >= 6 
+							AND case_age < 18 THEN
+								SUM(
+								IF
+									(
+										(
+											case_bcg 
+											AND case_opv0 
+											AND case_opv1 
+											AND case_opv2 
+											AND case_opv3 
+											AND case_rota1 
+											AND case_rota2 
+											AND case_rota3 
+											AND case_hepb 
+											AND case_penta1
+											AND case_penta2
+											AND case_penta3
+											AND case_yfever 
+											AND case_pcv1 
+											AND case_pcv2 
+											AND case_pcv3 
+											AND case_ipv 
+											AND case_meas1 
+										) IS NULL 
+										OR 0,
+										1,
+										0 
+									)) 
+								WHEN case_age >= 18 THEN
+								SUM(
+								IF
+									(
+										(
+											case_bcg 
+											AND case_opv0 
+											AND case_opv1 
+											AND case_opv2 
+											AND case_opv3 
+											AND case_rota1 
+											AND case_rota2 
+											AND case_rota3 
+											AND case_hepb 
+											AND case_penta1 
+											AND case_penta2
+											AND case_penta3
+											AND case_yfever 
+											AND case_pcv1 
+											AND case_pcv2 
+											AND case_pcv3 
+											AND case_menga 
+											AND case_meas1 
+											AND case_meas2 
+											AND case_ipv 
+										) IS NULL 
+										OR 0,
+										1,
+										0 
+									)) ELSE 0 
+							END AS "None" 
+						FROM
+							safety_case 
+						GROUP BY
+							country,
+						cluster,
+	case_age 

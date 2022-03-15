@@ -1,0 +1,539 @@
+{
+  "RECORDS": [
+    {
+      "feature": "bcg_date",
+      "description": "Date of BCG vaccine",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_age",
+      "description": "Age of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_bcg",
+      "description": "Whether card has information about BCG vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_carer_age",
+      "description": "The age of the care giver",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_carer_edu",
+      "description": "The highest level of education of the care giver",
+      "datapoint": "education"
+    },
+    {
+      "feature": "case_carer_mob",
+      "description": "The month of birth of the care giver",
+      "datapoint": "month"
+    },
+    {
+      "feature": "case_carer_rel",
+      "description": "The relationship of the care giver to child of interest",
+      "datapoint": "relate"
+    },
+    {
+      "feature": "case_carer_rlgn",
+      "description": "The religion of the care giver",
+      "datapoint": "religion"
+    },
+    {
+      "feature": "case_carer_rsp",
+      "description": "Whether the care giver is the respondent to this interview",
+      "datapoint": "yesno"
+    },
+    {
+      "feature": "case_carer_wrk",
+      "description": "The occupation of the care giver",
+      "datapoint": "work"
+    },
+    {
+      "feature": "case_carer_yob",
+      "description": "The year of birth of the care giver",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_cdist",
+      "description": "Distance to the nearest health center in kilometers",
+      "datapoint": "distance"
+    },
+    {
+      "feature": "case_cluster",
+      "description": "The usual cluster of residence of the case (stayed for the last 6 months)",
+      "datapoint": "cluster"
+    },
+    {
+      "feature": "case_country",
+      "description": "The country where the case was interviewed",
+      "datapoint": "country"
+    },
+    {
+      "feature": "case_doa",
+      "description": "The date of admission of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_dob",
+      "description": "Date of birth of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_doi",
+      "description": "The interview date of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_doo",
+      "description": "The date of outcome of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_dov",
+      "description": "The date of home visit",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_gender",
+      "description": "The gender/sex of the case",
+      "datapoint": "gender"
+    },
+    {
+      "feature": "case_gpslat",
+      "description": "The gps latitude of the home visited",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_gpslong",
+      "description": "The gps longitude of the home visited",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_hepb",
+      "description": "Whether card has information about HEPATITIS vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_hh_id",
+      "description": "An ID assigned to the household to uniquely identify the household",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_hh_size",
+      "description": "The size of the household at home visit",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_hh_und5",
+      "description": "The number of children under 5 of the household at home visit",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_hosp",
+      "description": "The ID of the sentinel hospital where case was interviewed",
+      "datapoint": "sentinel"
+    },
+    {
+      "feature": "case_id",
+      "description": "The consent id given to the case after consenting at the hospital",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_illdays",
+      "description": "The duration of illness prior to admission of the case",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_ipv",
+      "description": "Whether card has information about IPV DOSE vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_meas1",
+      "description": "Whether card has information about MEASLES DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_meas2",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_menga",
+      "description": "Whether card has information about MEASLES DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_net_bsick",
+      "description": "Whether the child of interest regularly slept under a bed net before getting ill.",
+      "datapoint": "yesno"
+    },
+    {
+      "feature": "case_net_night",
+      "description": "Whether the child of interest slept under a bed net last night",
+      "datapoint": "yesno"
+    },
+    {
+      "feature": "case_opv0",
+      "description": "Whether card has information about OPV  DOSE 0 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_opv1",
+      "description": "Whether card has information about OPV DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_opv2",
+      "description": "Whether card has information about OPV DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_opv3",
+      "description": "Whether card has information about OPV DOSE 3 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_outcome",
+      "description": "Outcome of admission of the case",
+      "datapoint": "outcome"
+    },
+    {
+      "feature": "case_pcv1",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_pcv2",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_pcv3",
+      "description": "Whether card has information about PNEUMOCOCAL DOSE 3 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_penta1",
+      "description": "Whether card has information about PENTAVALENT DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_penta2",
+      "description": "Whether card has information about PENTAVALENT DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_penta3",
+      "description": "Whether card has information about PENTAVALENT DOSE 3 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rec_bcg",
+      "description": "Response to recall on BCG vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_hepb",
+      "description": "Response to recall on HEPATITIS vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_ipv",
+      "description": "Response to recall on IPV DOSE vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_meas1",
+      "description": "Response to recall on MEASLES DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_meas2",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_menga",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_opv0",
+      "description": "Response to recall on OPV  DOSE 0 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_opv1",
+      "description": "Response to recall on OPV DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_opv2",
+      "description": "Response to recall on OPV DOSE 2 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_opv3",
+      "description": "Response to recall on OPV DOSE 3 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_pcv1",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_pcv2",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 2 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_pcv3",
+      "description": "Response to recall on PNEUMOCOCAL DOSE 3 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_penta1",
+      "description": "Response to recall on PENTAVALENT DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_penta2",
+      "description": "Response to recall on PENTAVALENT DOSE 2 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_penta3",
+      "description": "Response to recall on PENTAVALENT DOSE 3 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rota1",
+      "description": "Response to recall on ROTAVIRUS DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rota2",
+      "description": "Response to recall on ROTAVIRUS DOSE 2 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rota3",
+      "description": "Response to recall on ROTAVIRUS DOSE 3 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rtss1",
+      "description": "Response to recall on RTSS DOSE 1 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rtss2",
+      "description": "Response to recall on RTSS DOSE 2 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rtss3",
+      "description": "Response to recall on RTSS DOSE 3 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_rtss4",
+      "description": "Response to recall on RTSS DOSE 4 vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rec_yfever",
+      "description": "Response to recall on YELLOW FEVER vaccine",
+      "datapoint": "yesnodk"
+    },
+    {
+      "feature": "case_rota1",
+      "description": "Whether card has information about ROTAVIRUS DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rota2",
+      "description": "Whether card has information about ROTAVIRUS DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rota3",
+      "description": "Whether card has information about ROTAVIRUS DOSE 3 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rtss1",
+      "description": "Whether card has information about RTSS DOSE 1 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rtss2",
+      "description": "Whether card has information about RTSS DOSE 2 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rtss3",
+      "description": "Whether card has information about RTSS DOSE 3 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_rtss4",
+      "description": "Whether card has information about RTSS DOSE 4 vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "case_sdist",
+      "description": "Distance from the household to the hospital kilometers",
+      "datapoint": "distance"
+    },
+    {
+      "feature": "case_sleep_num",
+      "description": "The number of children who share the same sleeping place with child of interest",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_tov",
+      "description": "The time of home visit",
+      "datapoint": "self"
+    },
+    {
+      "feature": "case_vacc_lpoint",
+      "description": "The place where child of interest most recently received vaccine",
+      "datapoint": "vaccpoint"
+    },
+    {
+      "feature": "case_vacc_photo",
+      "description": "Whether a snapshot/photo of the DOCUMENTED VACCINE has been taken",
+      "datapoint": "yesno"
+    },
+    {
+      "feature": "case_vacc_rpoint",
+      "description": "The place where child of interest routinely receives vaccines",
+      "datapoint": "vaccpoint"
+    },
+    {
+      "feature": "case_yfever",
+      "description": "Whether card has information about YELLOW FEVER vaccine",
+      "datapoint": "yesnodate"
+    },
+    {
+      "feature": "hepb_date",
+      "description": "Date of HEPATITIS vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "ipv_date",
+      "description": "Date of IPV vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "mease1_date",
+      "description": "Date of MEASLES DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "mease2_date",
+      "description": "Date of MEASLES DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "menga_date",
+      "description": "Date of MENINGITIS vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "opv0_date",
+      "description": "Date of OPV DOSE 0 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "opv1_date",
+      "description": "Date of OPV DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "opv2_date",
+      "description": "Date of OPV DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "opv3_date",
+      "description": "Date of OPV DOSE 3 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "pcv1_date",
+      "description": "Date of PNEUMOCOCAL DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "pcv2_date ",
+      "description": "Date of PNEUMOCOCAL DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "pcv3_date",
+      "description": "Date of PNEUMOCOCAL DOSE 3 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "penta1_date",
+      "description": "Date of PENTAVALENT DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "penta2_date",
+      "description": "Date of PENTAVALENT DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "penta3_date",
+      "description": "Date of PENTAVALENT DOSE 3 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rota1_date",
+      "description": "Date of ROTAVIRUS DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rota2_date",
+      "description": "Date of ROTAVIRUS DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rota3_date",
+      "description": "Date of ROTAVIRUS DOSE 3 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rtss1_date",
+      "description": "Date of RTSS DOSE 1 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rtss2_date",
+      "description": "Date of RTSS DOSE 2 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "rtss3_date",
+      "description": "Date of RTSS DOSE 3 vaccination",
+      "datapoint": "sell"
+    },
+    {
+      "feature": "rtss4_date",
+      "description": "Date of RTSS DOSE 4 vaccination",
+      "datapoint": "self"
+    },
+    {
+      "feature": "yfever_date",
+      "description": "Date of YELLOW FEVER vaccination",
+      "datapoint": "self"
+    }
+  ]
+}

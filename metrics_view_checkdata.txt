@@ -1,0 +1,618 @@
+
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_edu' AS feature,
+	get_feature_description ( 'case_carer_edu' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_carer_edu ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_rel' AS feature,
+	get_feature_description ( 'case_carer_rel' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_carer_rel ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_rlgn' AS feature,
+	get_feature_description ( 'case_carer_rlgn' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_carer_rlgn ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_rsp' AS feature,
+	get_feature_description ( 'case_carer_rsp' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_carer_rsp ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_wrk' AS feature,
+	get_feature_description ( 'case_carer_wrk' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_carer_wrk ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_cdist' AS feature,
+	get_feature_description ( 'case_cdist' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_cdist ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_net_bsick' AS feature,
+	get_feature_description ( 'case_net_bsick' ) AS description,
+	COUNT(*) AS vists,
+	COUNT( control_net_bsick ) AS total 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	8 AS sn,
+	get_country ( control_country ) AS country,
+	'control_net_night' AS feature,
+	get_feature_description ( 'case_net_night' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_net_night ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	67 AS sn,
+	get_country ( control_country ) AS country,
+	'control_sdist' AS feature,
+	get_feature_description ( 'case_sdist' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_sdist ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	68 AS sn,
+	get_country ( control_country ) AS country,
+	'control_vacc_lpoint' AS feature,
+	get_feature_description ( 'case_vacc_lpoint' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_vacc_lpoint ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	70 AS sn,
+	get_country ( control_country ) AS country,
+	'control_vacc_rpoint' AS feature,
+	get_feature_description ( 'case_vacc_rpoint' ) AS description,
+	COUNT(*) AS total,
+	COUNT( control_vacc_rpoint ) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_vacc_photo' AS feature,
+	get_feature_description ( 'case_vacc_photo' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_vacc_photo > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_gender' AS feature,
+	get_feature_description ( 'case_gender' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_gender > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_mob' AS feature,
+	get_feature_description ( 'case_carer_mob' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_carer_mob > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_cluster' AS feature,
+	get_feature_description ( 'case_cluster' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_cluster > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_country' AS feature,
+	get_feature_description ( 'case_country' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_country > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_hh_size' AS feature,
+	get_feature_description ( 'case_hh_size' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_hh_size > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_hh_und5' AS feature,
+	get_feature_description ( 'case_hh_und5' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_hh_und5 > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_age' AS feature,
+	get_feature_description ( 'case_age' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_age > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_carer_yob' AS feature,
+	get_feature_description ( 'case_carer_yob' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_carer_yob > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_dov' AS feature,
+	get_feature_description ( 'case_dov' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_dov > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_gpslat' AS feature,
+	get_feature_description ( 'case_gpslat' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_gpslat > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_gpslong' AS feature,
+	get_feature_description ( 'case_gpslong' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF(IFNULL(control_gpslong,0),1,0)) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_hh_id' AS feature,
+	get_feature_description ( 'case_hh_id' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_hh_id > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_tov' AS feature,
+	get_feature_description ( 'case_tov' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_tov > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_sleep_num' AS feature,
+	get_feature_description ( 'case_sleep_num' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_sleep_num > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+	
+-- 	data about vaccination
+
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_bcg_date' AS feature,
+	get_feature_description ( 'bcg_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_bcg_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_hepb_date' AS feature,
+	get_feature_description ( 'hepb_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_hepb_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_ipv_date' AS feature,
+	get_feature_description ( 'ipv_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_ipv_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls`
+GROUP BY
+	control_country   UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_meas1_date' AS feature,
+	get_feature_description ( 'mease1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_meas1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_meas2_date' AS feature,
+	get_feature_description ( 'mease2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_meas2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_menga_date' AS feature,
+	get_feature_description ( 'menga_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_menga_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_opv0_date' AS feature,
+	get_feature_description ( 'opv0_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_opv0_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_opv1_date' AS feature,
+	get_feature_description ( 'opv1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_opv1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_opv2_date' AS feature,
+	get_feature_description ( 'opv2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_opv2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_opv3_date' AS feature,
+	get_feature_description ( 'opv3_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_opv3_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_pcv1_date' AS feature,
+	get_feature_description ( 'pcv1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_pcv1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_pcv2_date' AS feature,
+	get_feature_description ( 'pcv2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_pcv2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_pcv3_date' AS feature,
+	get_feature_description ( 'pcv3_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_pcv3_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_penta1_date' AS feature,
+	get_feature_description ( 'penta1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_penta1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_penta2_date' AS feature,
+	get_feature_description ( 'penta2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_penta2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_penta3_date' AS feature,
+	get_feature_description ( 'penta3_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_penta3_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country  UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rota1_date' AS feature,
+	get_feature_description ( 'rota1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rota1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rota2_date' AS feature,
+	get_feature_description ( 'rota2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rota2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rota3_date' AS feature,
+	get_feature_description ( 'rota3_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rota3_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rtss1_date' AS feature,
+	get_feature_description ( 'rtss1_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rtss1_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rtss2_date' AS feature,
+	get_feature_description ( 'rtss2_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rtss2_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_rtss3_date' AS feature,
+	get_feature_description ( 'rtss3_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_rtss3_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	71 AS sn,
+	get_country ( control_country ) AS country,
+	'control_yfever_date' AS feature,
+	get_feature_description ( 'yfever_date' ) AS description,
+	COUNT(*) AS total,
+	SUM(
+	IF
+	( control_yfever_date > 0, 1, 0 )) AS visits 
+FROM
+	`safety_controls` 
+GROUP BY
+	control_country 
