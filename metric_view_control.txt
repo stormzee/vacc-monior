@@ -1,0 +1,743 @@
+
+
+SELECT
+	get_country ( control_country ) AS country,
+	'control_bcg' AS Feature,
+	get_feature_description ( 'case_bcg' ) AS description,
+	get_feature_category ( 0, 'case_bcg', control_bcg ) AS category,
+	COUNT( control_bcg ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_bcg UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_hepb' AS Feature,
+	get_feature_description ( 'case_hepb' ) AS description,
+	get_feature_category ( 0, 'case_hepb', control_hepb ) AS category,
+	COUNT( control_hepb ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_hepb UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_edu' AS Feature,
+	get_feature_description ( 'case_carer_edu' ) AS description,
+	get_feature_category ( 0, 'case_carer_edu', control_carer_edu ) AS category,
+	COUNT( control_carer_edu ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_edu UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_mob' AS Feature,
+	get_feature_description ( 'case_carer_mob' ) AS description,
+	get_feature_category ( 0, 'case_carer_mob', control_carer_mob ) AS category,
+	COUNT( control_carer_mob ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_mob UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_rel' AS Feature,
+	get_feature_description ( 'case_carer_rel' ) AS description,
+	get_feature_category ( 0, 'case_carer_rel', control_carer_rel ) AS category,
+	COUNT( control_carer_mob ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_rel UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_rlgn' AS Feature,
+	get_feature_description ( 'case_carer_rlgn' ) AS description,
+	get_feature_category ( 0, 'case_carer_rlgn', control_carer_rlgn ) AS category,
+	COUNT( control_carer_rlgn ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_rlgn UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_rsp' AS Feature,
+	get_feature_description ( 'case_carer_rsp' ) AS description,
+	get_feature_category ( 0, 'case_carer_rsp', control_carer_rsp ) AS category,
+	COUNT( control_carer_rsp ) AS Frequency 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_rsp UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_carer_wrk' AS Feature,
+	get_feature_description ( 'case_carer_wrk' ) AS description,
+	get_feature_category ( 0, 'case_carer_wrk', control_carer_wrk ) AS category,
+	COUNT( control_carer_wrk ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_carer_wrk UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_cdist' AS Feature,
+	get_feature_description ( 'case_cdist' ) AS description,
+	get_feature_category ( 0, 'case_cdist', control_cdist ) AS category,
+	COUNT( control_cdist ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_cdist UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_cluster' AS Feature,
+	get_feature_description ( 'case_cluster' ) AS description,
+	get_feature_category ( control_country, 'case_cluster', control_cluster ) AS category,
+	COUNT( control_cluster ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_cluster UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_country' AS Feature,
+	get_feature_description ( 'case_country' ) AS description,
+	get_feature_category ( 0, 'case_country', control_country ) AS category,
+	COUNT( control_country ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_gender' AS Feature,
+	get_feature_description ( 'case_gender' ) AS description,
+	get_feature_category ( 0, 'case_gender', control_gender ) AS category,
+	COUNT( control_gender ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_gender UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_hosp' AS Feature,
+	get_feature_description ( 'case_hosp' ) AS description,
+	get_feature_category ( control_country, 'case_hosp', case_hosp ) AS category,
+	COUNT( case_hosp ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	case_hosp UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_ipv' AS Feature,
+	get_feature_description ( 'case_ipv' ) AS description,
+	get_feature_category ( 0, 'case_ipv', control_ipv ) AS category,
+	COUNT( control_ipv ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_ipv UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_meas1' AS Feature,
+	get_feature_description ( 'case_meas1' ) AS description,
+	get_feature_category ( 0, 'case_meas1', control_meas1 ) AS category,
+	COUNT( control_meas1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_meas1 
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_meas2' AS Feature,
+	get_feature_description ( 'case_meas2' ) AS description,
+	get_feature_category ( 0, 'case_meas2', control_meas2 ) AS category,
+	COUNT( control_meas2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_meas2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_menga' AS Feature,
+	get_feature_description ( 'case_menga' ) AS description,
+	get_feature_category ( 0, 'case_menga', control_menga ) AS category,
+	COUNT( control_menga ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_menga UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_net_bsick' AS Feature,
+	get_feature_description ( 'case_net_bsick' ) AS description,
+	get_feature_category ( 0, 'case_net_bsick', control_net_bsick ) AS category,
+	COUNT( control_net_bsick ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_net_bsick UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_net_night' AS Feature,
+	get_feature_description ( 'case_net_night' ) AS description,
+	get_feature_category ( 0, 'case_net_night', control_net_night ) AS category,
+	COUNT( control_net_night ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_net_night UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_opv0' AS Feature,
+	get_feature_description ( 'case_opv0' ) AS description,
+	get_feature_category ( 0, 'case_opv0', control_opv0 ) AS category,
+	COUNT( control_opv0 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_opv0 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_opv1' AS Feature,
+	get_feature_description ( 'case_opv1' ) AS description,
+	get_feature_category ( 0, 'case_opv1', control_opv1 ) AS category,
+	COUNT( control_opv1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_opv1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_opv2' AS Feature,
+	get_feature_description ( 'case_opv2' ) AS description,
+	get_feature_category ( 0, 'case_opv2', control_opv2 ) AS category,
+	COUNT( control_opv2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_opv2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_opv3' AS Feature,
+	get_feature_description ( 'case_opv3' ) AS description,
+	get_feature_category ( 0, 'case_opv3', control_opv3 ) AS category,
+	COUNT( control_opv3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_opv3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_outcome' AS Feature,
+	get_feature_description ( 'case_outcome' ) AS description,
+	get_feature_category ( 0, 'case_outcome', case_outcome ) AS category,
+	COUNT( case_outcome ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	case_outcome UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_pcv1' AS Feature,
+	get_feature_description ( 'case_pcv1' ) AS description,
+	get_feature_category ( 0, 'case_pcv1', control_pcv1 ) AS category,
+	COUNT( control_pcv1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_pcv1 -- 	
+--
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_pcv2' AS Feature,
+	get_feature_description ( 'case_pcv2' ) AS description,
+	get_feature_category ( 0, 'case_pcv2', control_pcv2 ) AS category,
+	COUNT( control_pcv2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_pcv2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_pcv3' AS Feature,
+	get_feature_description ( 'case_pcv3' ) AS description,
+	get_feature_category ( 0, 'case_pcv3', control_pcv3 ) AS category,
+	COUNT( control_pcv3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_pcv3 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_penta1' AS Feature,
+	get_feature_description ( 'case_penta1' ) AS description,
+	get_feature_category ( 0, 'case_penta1', control_penta1 ) AS category,
+	COUNT( control_penta1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_penta1 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_penta2' AS Feature,
+	get_feature_description ( 'case_penta2' ) AS description,
+	get_feature_category ( 0, 'case_penta2', control_penta2 ) AS category,
+	COUNT( control_penta2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_penta2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_penta3' AS Feature,
+	get_feature_description ( 'case_penta3' ) AS description,
+	get_feature_category ( 0, 'case_penta3', control_penta3 ) AS category,
+	COUNT( control_penta3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_penta3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_bcg' AS Feature,
+	get_feature_description ( 'case_rec_bcg' ) AS description,
+	get_feature_category ( 0, 'case_rec_bcg', control_rec_bcg ) AS category,
+	COUNT( control_rec_bcg ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_bcg UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_hepb' AS Feature,
+	get_feature_description ( 'case_rec_hepb' ) AS description,
+	get_feature_category ( 0, 'case_rec_hepb', control_rec_hepb ) AS category,
+	COUNT( control_rec_hepb ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_hepb UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_ipv' AS Feature,
+	get_feature_description ( 'case_rec_ipv' ) AS description,
+	get_feature_category ( 0, 'case_rec_ipv', control_rec_ipv ) AS category,
+	COUNT( control_rec_ipv ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_ipv --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_meas1' AS Feature,
+	get_feature_description ( 'case_rec_meas1' ) AS description,
+	get_feature_category ( 0, 'case_rec_meas1', control_rec_meas1 ) AS category,
+	COUNT( control_rec_meas1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_meas1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_meas2' AS Feature,
+	get_feature_description ( 'case_rec_meas2' ) AS description,
+	get_feature_category ( 0, 'case_rec_meas2', control_rec_meas2 ) AS category,
+	COUNT( control_rec_meas2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_meas2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_menga' AS Feature,
+	get_feature_description ( 'case_rec_menga' ) AS description,
+	get_feature_category ( 0, 'case_rec_menga', control_rec_menga ) AS category,
+	COUNT( control_rec_menga ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_menga UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_opv0' AS Feature,
+	get_feature_description ( 'case_rec_opv0' ) AS description,
+	get_feature_category ( 0, 'case_rec_opv0', control_rec_opv0 ) AS category,
+	COUNT( control_rec_opv0 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_opv0 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_opv1' AS Feature,
+	get_feature_description ( 'case_rec_opv1' ) AS description,
+	get_feature_category ( 0, 'case_rec_opv1', control_rec_opv1 ) AS category,
+	COUNT( control_rec_opv1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_opv1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_opv2' AS Feature,
+	get_feature_description ( 'case_rec_opv2' ) AS description,
+	get_feature_category ( 0, 'case_rec_opv2', control_rec_opv2 ) AS category,
+	COUNT( control_rec_opv2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_opv2 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_opv3' AS Feature,
+	get_feature_description ( 'case_rec_opv3' ) AS description,
+	get_feature_category ( 0, 'case_rec_opv3', control_rec_opv3 ) AS category,
+	COUNT( control_rec_opv3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_opv3 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_pcv1' AS Feature,
+	get_feature_description ( 'case_rec_pcv1' ) AS description,
+	get_feature_category ( 0, 'case_rec_pcv1', control_rec_pcv1 ) AS category,
+	COUNT( control_rec_pcv1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_pcv1 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_pcv2' AS Feature,
+	get_feature_description ( 'case_rec_pcv2' ) AS description,
+	get_feature_category ( 0, 'case_rec_pcv2', control_rec_pcv2 ) AS category,
+	COUNT( control_rec_pcv2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_pcv2 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_pcv3' AS Feature,
+	get_feature_description ( 'case_rec_pcv3' ) AS description,
+	get_feature_category ( 0, 'case_rec_pcv3', control_rec_pcv3 ) AS category,
+	COUNT( control_rec_pcv3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_pcv3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_penta1' AS Feature,
+	get_feature_description ( 'case_rec_penta1' ) AS description,
+	get_feature_category ( 0, 'case_rec_penta1', control_rec_penta1 ) AS category,
+	COUNT( control_rec_penta1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_penta1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_penta2' AS Feature,
+	get_feature_description ( 'case_rec_penta2' ) AS description,
+	get_feature_category ( 0, 'case_rec_penta2', control_rec_penta2 ) AS category,
+	COUNT( control_rec_penta2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_penta2 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_penta3' AS Feature,
+	get_feature_description ( 'case_rec_penta3' ) AS description,
+	get_feature_category ( 0, 'case_rec_penta3', control_rec_penta3 ) AS category,
+	COUNT( control_rec_penta3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_penta3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rota1' AS Feature,
+	get_feature_description ( 'case_rec_rota1' ) AS description,
+	get_feature_category ( 0, 'case_rec_rota1', control_rec_rota1 ) AS category,
+	COUNT( control_rec_rota1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rota1 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rota2' AS Feature,
+	get_feature_description ( 'case_rec_rota2' ) AS description,
+	get_feature_category ( 0, 'case_rec_rota2', control_rec_rota2 ) AS category,
+	COUNT( control_rec_rota2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rota2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rota3' AS Feature,
+	get_feature_description ( 'case_rec_rota3' ) AS description,
+	get_feature_category ( 0, 'case_rec_rota3', control_rec_rota3 ) AS category,
+	COUNT( control_rec_rota3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rota3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rtss1' AS Feature,
+	get_feature_description ( 'case_rec_rtss1' ) AS description,
+	get_feature_category ( 0, 'case_rec_rtss1', control_rec_rtss1 ) AS category,
+	COUNT( control_rec_rtss1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rtss1 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rtss2' AS Feature,
+	get_feature_description ( 'case_rec_rtss2' ) AS description,
+	get_feature_category ( 0, 'case_rec_rtss2', control_rec_rtss2 ) AS category,
+	COUNT( control_rec_rtss2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rtss2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rtss3' AS Feature,
+	get_feature_description ( 'case_rec_rtss3' ) AS description,
+	get_feature_category ( 0, 'case_rec_rtss3', control_rec_rtss3 ) AS category,
+	COUNT( control_rec_rtss3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rtss3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_rtss4' AS Feature,
+	get_feature_description ( 'case_rec_rtss4' ) AS description,
+	get_feature_category ( 0, 'case_rec_rtss4', control_rec_rtss4 ) AS category,
+	COUNT( control_rec_rtss4 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_rtss4 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rec_yfever' AS Feature,
+	get_feature_description ( 'case_rec_yfever' ) AS description,
+	get_feature_category ( 0, 'case_rec_yfever', control_rec_yfever ) AS category,
+	COUNT( control_rec_yfever ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rec_yfever UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rota1' AS Feature,
+	get_feature_description ( 'case_rota1' ) AS description,
+	get_feature_category ( 0, 'case_rota1', control_rota1 ) AS category,
+	COUNT( control_rota1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rota1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rota2' AS Feature,
+	get_feature_description ( 'case_rota2' ) AS description,
+	get_feature_category ( 0, 'case_rota2', control_rota2 ) AS category,
+	COUNT( control_rota2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rota2 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rota3' AS Feature,
+	get_feature_description ( 'case_rota3' ) AS description,
+	get_feature_category ( 0, 'case_rota3', control_rota3 ) AS category,
+	COUNT( control_rota3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rota3 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rtss1' AS Feature,
+	get_feature_description ( 'case_rtss1' ) AS description,
+	get_feature_category ( 0, 'case_rtss1', control_rtss1 ) AS category,
+	COUNT( control_rtss1 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rtss1 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rtss2' AS Feature,
+	get_feature_description ( 'case_rtss2' ) AS description,
+	get_feature_category ( 0, 'case_rtss2', control_rtss2 ) AS category,
+	COUNT( control_rtss2 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rtss2 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rtss3' AS Feature,
+	get_feature_description ( 'case_rtss3' ) AS description,
+	get_feature_category ( 0, 'case_rtss3', control_rtss3 ) AS category,
+	COUNT( control_rtss3 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rtss3 --
+UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_rtss4' AS Feature,
+	get_feature_description ( 'case_rtss4' ) AS description,
+	get_feature_category ( 0, 'case_rtss4', control_rtss4 ) AS category,
+	COUNT( control_rtss4 ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_rtss4 UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_sdist' AS Feature,
+	get_feature_description ( 'case_sdist' ) AS description,
+	get_feature_category ( 0, 'case_sdist', control_sdist ) AS category,
+	COUNT( control_sdist ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_sdist UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_vacc_lpoint' AS Feature,
+	get_feature_description ( 'case_vacc_lpoint' ) AS description,
+	get_feature_category ( 0, 'case_vacc_lpoint', control_vacc_lpoint ) AS category,
+	COUNT( control_vacc_lpoint ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_vacc_lpoint UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_vacc_photo' AS Feature,
+	get_feature_description ( 'case_vacc_photo' ) AS description,
+	get_feature_category ( 0, 'case_vacc_photo', control_vacc_photo ) AS category,
+	COUNT( control_vacc_photo ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_vacc_photo UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_vacc_rpoint' AS Feature,
+	get_feature_description ( 'case_vacc_rpoint' ) AS description,
+	get_feature_category ( 0, 'case_vacc_rpoint', control_vacc_rpoint ) AS category,
+	COUNT( control_vacc_rpoint ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_vacc_rpoint UNION ALL
+SELECT
+	get_country ( control_country ) AS country,
+	'control_yfever' AS Feature,
+	get_feature_description ( 'case_yfever' ) AS description,
+	get_feature_category ( 0, 'case_yfever', control_yfever ) AS category,
+	COUNT( control_yfever ) AS Total 
+FROM
+	`controls` 
+GROUP BY
+	control_country,
+	control_yfever 

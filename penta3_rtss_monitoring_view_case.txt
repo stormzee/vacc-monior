@@ -1,0 +1,59 @@
+SELECT get_country(case_country) AS country, get_feature_category(case_country, 'case_cluster', case_cluster) AS cluster, case_age AS Age, CASE 
+	WHEN case_penta3 IS NOT NULL THEN
+		SUM(
+		IF
+		( case_penta3 = 1, 1, 0 ))
+		
+	ELSE
+		0 
+END AS "complete for penta3", CASE 
+	WHEN case_penta3 IS NOT NULL THEN
+		SUM(
+		IF
+		( case_penta3 = 0, 1, 0 ))
+
+	ELSE
+		0
+		END AS "incomplete for penta3", CASE 
+	WHEN case_penta3 IS NULL THEN
+		SUM(
+		IF
+		( case_penta3 IS NULL, 1, 0 ))
+
+	ELSE
+		0
+		END AS "None", CASE 
+	WHEN case_rtss1 IS NOT NULL THEN
+		SUM(
+		IF
+		( case_rtss1 = 1, 1, 0 ))
+		
+	ELSE
+		0 
+END AS rtss1, CASE 
+	WHEN case_rtss2 IS NOT NULL THEN
+		SUM(
+		IF
+		( case_rtss2 = 1, 1, 0 ))
+
+	ELSE
+		0
+		END AS rtss2, CASE 
+	WHEN case_rtss3 IS NOT NULL THEN
+		SUM(
+		IF
+		( case_rtss3 = 1, 1, 0 ))
+
+	ELSE
+		0
+		END AS rtss3, CASE
+	WHEN case_rtss4 IS NOT NULL THEN
+		SUM(
+		IF
+			(case_rtss4 = 1, 1, 0 ))
+
+	ELSE
+		0
+		END AS rtss4
+FROM safety_case 
+GROUP BY country, cluster, case_age 
